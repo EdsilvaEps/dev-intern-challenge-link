@@ -28,11 +28,81 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35vmin;
+}
+
+.topFixed {
+  position:fixed;
+  top:10;
+  width:100%;
+  z-index:100;
+}
+
+.container {
+  background-color: '#777',
+
+}
+
+#mainNav {
+  padding-bottom: 10px;
+  color:white;
+  border-color: white;
+  background: white;
+
+}
+
+#shortenerjumbo {
+  border-color: white;
+  height: 30%;
+  padding-top: 300px;
+  padding-bottom: 250px;
+  background-image: url("./Assets/background-home.jpg");
+
+}
+
+#shortenform {
+  padding-top: 30px;
+  width: 100%;
+  float: none;
+  margin-left:auto;
+  justify-content: center;
+
+}
+
+
+#linkinput {
+  width: 30%;
+}
+
+.shortener-text{
+  color: white;
+  font-family: 'Roboto';
+  font-size: 150%;
+}
+
+.linkurl{
+  color: #AA1423;
+  font-family: 'Roboto-Slab';
+  font-weight: bold;
+  font-size: 150%;
+  padding-right: 20vmin;
+}
+
+.linkclicks{
+  color: #777;
+  font-family: 'Roboto-Slab';
+  font-size: 120%;
+  margin-left: auto;
+}
+
+#top5header {
+  color: #AA1423;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding-bottom: 15px;
 }
