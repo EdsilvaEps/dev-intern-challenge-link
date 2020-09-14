@@ -1,4 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Desafio técnico de Estágio em desenvolvimento fullstack Linx
 Autor: Edson Nascimento Silva Neto.
