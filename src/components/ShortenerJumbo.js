@@ -3,10 +3,8 @@ import {
   Container,
   Jumbotron,
   Button,
-  Form,
   FormGroup,
   Input } from 'reactstrap';
-import PropTypes from 'prop-types'
 
 
 export class ShortenerJumbo extends Component {
@@ -23,18 +21,18 @@ export class ShortenerJumbo extends Component {
 
   handleInput = event => {
     this.setState({url: event.target.value});
-    if(this.state.url == ''){
+    if(this.state.url === ''){
       this.setState({btnText:'Encurtar'});
     }
   }
 
   shortenLink = () => {
-    if(this.state.url != ''){
+    if(this.state.url !== ''){
       this.setState({btnText : 'Copiar', url:'http://chr.dc/staticlink'});
 
     }
 
-    if(this.state.btnText == 'Copiar' && this.state.url != ''){
+    if(this.state.btnText === 'Copiar' && this.state.url !== ''){
       this.setState({btnText : 'Encurtar', url: ''});
     }
     console.log(this.state.url);
@@ -54,13 +52,6 @@ export class ShortenerJumbo extends Component {
 
     }
 
-    const inputAfter = {
-      width: '30%',
-      backgroundColor: '#AA1423',
-      color: 'white',
-      fontFamily: 'Roboto',
-
-    }
 
     const btn = {
       borderRadius: '1px',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListGroup, ListGroupItem, ListGroupItemHeading } from 'reactstrap';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 export const TopFive = (props) =>{
