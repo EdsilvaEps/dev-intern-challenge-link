@@ -7,12 +7,25 @@ const app = express();
 
 let rawdata = fs.readFileSync('../src/Assets/urls.json');
 let urls = JSON.parse(rawdata);
-// app.use(cookieParser());
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 console.log(urls);
 //app.use('/urls', urls);
+
+function getFiveBest(){
+  let topFive = urls;
+
+  topFive.sort((a,b)) =>{
+    return b.hits - b.hits;
+  }
+
+  console.log(topFive);
+
+}
+
+getFiveBest();
 
 router.get('/', (req, res) => {
   res.json(urls);
