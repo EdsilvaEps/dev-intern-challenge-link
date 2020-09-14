@@ -18,3 +18,40 @@ dev na porta `localhost:3000`.
 Para rodar a API localmente basta abrir um terminal
 no diretório "API" do projeto e utilizar `node app.py`.
 A aplicação começará então a receber requisições na porta 8000 localhost.
+
+## Estrutura
+
+```sh
+dev-intern-challenge
+|--API
+|   -- app.js
+|--public
+|   |--index.html
+|   |--manifest.json
+|   |--favicon.txt
+|--src
+|   |--App.css
+|   |--App.js
+|   |--App.test.js
+|   |--index.css
+|   |--index.js
+|   |--serviceWorker.js
+|   |--setupTests.js
+|   |--Assets
+|   |   |--asset files(png, jpg)
+|   |   |--urls.json
+|   |--components
+|   |   |--Footer.js
+|   |   |--HitsJumbo.js
+|   |   |--ShortenerJumbo.js
+|   |   |--TopBar.js
+|   |   |--TopFive.js
+|   |--containers
+|   |   |--HitsBoxContainer.js
+|   |   |--TopFiveContainer.js
+|--package.json
+|--package.lock.json
+|--README.md
+|--final_result.png
+
+```
