@@ -1,5 +1,6 @@
 
-Desafio técnico de Estágio em desenvolvimento fullstack Linx
+Desafio técnico de Estágio em desenvolvimento fullstack Linx.
+
 Autor: Edson Nascimento Silva Neto.
 
 ## Inicializando projeto
