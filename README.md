@@ -24,7 +24,7 @@ A aplicação começará então a receber requisições na porta 8000 localhost.
 ```sh
 dev-intern-challenge
 |--API
-|   -- app.js
+|   |-- app.js
 |--public
 |   |--index.html
 |   |--manifest.json
@@ -49,6 +49,8 @@ dev-intern-challenge
 |   |--containers
 |   |   |--HitsBoxContainer.js
 |   |   |--TopFiveContainer.js
+|--Layout
+|   |-- original_layout_files(jpg, png, psd, gif)
 |--package.json
 |--package.lock.json
 |--README.md
