@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HitsJumbo } from '../components/HitsJumbo';
 
 // TODO: replace this with JSON file
-const mockHits = "35.713.571";
+const mockHits = "0";
 const localApiPath = "http://localhost:8000/hits";
 
 export class HitsBoxContainer extends Component {

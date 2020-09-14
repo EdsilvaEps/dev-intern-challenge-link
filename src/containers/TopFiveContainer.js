@@ -6,7 +6,7 @@ const items = [
     "id": "1",
     "hits": 0,
     "url": "http://globo.com",
-    "shortUrl": "http://chr.dc/9dtr4"
+    "shortUrl": "N/A"
   }
 ];
 
