@@ -6,14 +6,16 @@ import {
 } from 'reactstrap';// import { throttle } from 'throttle-debounce';
 
 
-export class TopBar extends Component {
-  constructor(props){
-    super(props);
+export const TopBar = (props) =>{
+
+//export class TopBar extends Component {
+  //constructor(props){
+    //super(props);
 
     // this.handleWindowResize = this.handleWindowResize.bind(this);
     //  this.state = { isMobile: VariableStore.isMobile(), dropdownOpen: false }
 
-  }
+  //}
 
   // DESCOMENTAR CODIGO ABAIXO E ACIMA PARA MOBILE
   /*handleWindowResize = () => {
@@ -50,31 +52,31 @@ export class TopBar extends Component {
  */
 
 
-  render(){
-
-    const divStyle = {
-      color : 'white'
-    }
-
-    return (
-      <Nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div className="container">
-          <NavbarBrand href="/">
-            <img
-              src={logo}
-              className="align-top centered"
-              alt="chaordic logo"
-            />
-          </NavbarBrand>
-
-        </div>
-      </Nav>
 
 
-
-    );
-
+  const divStyle = {
+    color : 'white'
   }
+
+  return (
+    <Nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div className="container" id="navDiv">
+        <NavbarBrand href="/">
+          <img
+            src={logo}
+            className="align-top"
+            alt="chaordic logo"
+          />
+        </NavbarBrand>
+
+      </div>
+    </Nav>
+
+
+
+  );
+
+
 
 }
 

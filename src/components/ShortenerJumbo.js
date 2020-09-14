@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import {
   Container,
-  Row,
-  Col,
   Jumbotron,
-  Media,
   Button,
   Form,
   FormGroup,
@@ -16,12 +13,65 @@ export class ShortenerJumbo extends Component {
   constructor(props){
     super(props);
 
-    this.state = {url:''};
+    this.state = {
+      url:'',
+      btnText:'Encurtar',
+    };
+    this.shortenLink = this.shortenLink.bind(this);
+    this.handleInput = this.handleInput.bind(this);
   }
+
+  handleInput = event => {
+    this.setState({url: event.target.value});
+    if(this.state.url == ''){
+      this.setState({btnText:'Encurtar'});
+    }
+  }
+
+  shortenLink = () => {
+    if(this.state.url != ''){
+      this.setState({btnText : 'Copiar', url:'http://chr.dc/staticlink'});
+
+    }
+
+    if(this.state.btnText == 'Copiar' && this.state.url != ''){
+      this.setState({btnText : 'Encurtar', url: ''});
+    }
+    console.log(this.state.url);
+  }
+
+
 
 
   render(){
     const textStyle = {color:'white', fontFamily:'Roboto'};
+
+    const inputBefore = {
+      width: '30%',
+      backgroundColor: 'inherit',
+      color: '#FF6E15',
+      fontFamily: 'Roboto',
+
+    }
+
+    const inputAfter = {
+      width: '30%',
+      backgroundColor: '#AA1423',
+      color: 'white',
+      fontFamily: 'Roboto',
+
+    }
+
+    const btn = {
+      borderRadius: '1px',
+      color:'white',
+      fontFamily: 'Roboto',
+      fontWeight: 'bold',
+      backgroundColor: '#FF6E15',
+      borderStyle: 'none'
+
+    }
+
 
     return (
       <div className="container-body">
@@ -36,8 +86,17 @@ export class ShortenerJumbo extends Component {
               </p>
             </div>
             <FormGroup className="form-inline" id="shortenform">
-              <Input type="email" name="link" id="linkinput" placeholder="Cole o seu link aqui"/>
-              <Button color="warning" id="shortenbtn">Encurtar</Button>
+              <div className="customInput">
+                <Input
+                    style={inputBefore}
+                    onChange={this.handleInput}
+                    type="email"
+                    name="link"
+                    id="shortenerInput"
+                    value={this.state.url}
+                    placeholder="Cole o seu link aqui"/>
+                <Button style={btn} color="warning" id="shortenbtn" onClick={this.shortenLink}>{this.state.btnText}</Button>
+              </div>
             </FormGroup>
           </Container>
         </Jumbotron>

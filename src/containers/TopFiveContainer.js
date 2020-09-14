@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TopFive } from '../components/TopFive';
 
+// TODO: Replace this with JSON file
 const items = [
   {
     "id": "23094",
